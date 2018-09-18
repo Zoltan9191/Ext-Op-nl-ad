@@ -1,1 +1,1 @@
-# Extension download video from Openload.co
+# Extension - Openload.co video downloader
