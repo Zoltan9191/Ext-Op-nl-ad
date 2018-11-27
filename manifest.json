@@ -1,9 +1,7 @@
 {
-
 	"manifest_version": 2,
 	"name": "OpenloadUrl",
 	"version": "1.2.3",
-
 	"description": "Showing url from Openload videos",
 
 	"icons": {
@@ -11,15 +9,15 @@
   },
   
   "applications": {
-		"gecko": {
-			"id": "OpenloadUrl@example.com",
-			"strict_min_version": "45.0"
-		}
-	},
+	"gecko": {
+		"id": "OpenloadUrl@example.com",
+		"strict_min_version": "45.0"
+	}
+  },
 	
-	"browser_action": {
-		"default_icon": "icons/play-32.png",
-		"default_popup": "popup.html"
+  "browser_action": {
+	"default_icon": "icons/play-32.png",
+	"default_popup": "popup.html"
   },
 
     "permissions": [
@@ -32,12 +30,12 @@
     "scripts": ["background.js"]
   },
   
-	"content_scripts": [
+  "content_scripts": [
     {
-		"matches": ["*://*.openload.co/*" , "*://*.oload.download/*"],
-		  "run_at": "document_idle",
-		"js": ["showUrl.js"],
-		 "all_frames": false
+	"matches": ["*://*.openload.co/*" , "*://*.oload.download/*"],
+	"run_at": "document_idle",
+	"js": ["showUrl.js"],
+	"all_frames": false
     }
   ]
 }
